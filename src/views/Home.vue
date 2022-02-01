@@ -2,7 +2,7 @@
   <main v-if="!loading">
     <DataTitle :text="title" :data-date="dataDate"
     ></DataTitle>
-    <DataBoxes :stats = stats ></DataBoxes>
+    <DataBoxes :stats = "stats" ></DataBoxes>
     <CountrySelect
         @get-country="getCountryData"
         :countries="countries"></CountrySelect>
